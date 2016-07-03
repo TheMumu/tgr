@@ -6,7 +6,7 @@
 	<groupId>com.tgr</groupId>
 	<artifactId>tgr</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>tgr</name>
 	<description>Demo project for the gagnon records</description>
