@@ -16,7 +16,6 @@ public class HomeController {
 		ModelAndView model = new ModelAndView("home");
 		model.addObject("time", new Date());
 		model.addObject("message", "THIS is the message");
-		String string = "test";
 		return model;
 	}
 }
