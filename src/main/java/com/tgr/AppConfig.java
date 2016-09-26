@@ -9,10 +9,10 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan
 @Configuration
 @EnableAutoConfiguration
-public class TgrApplication {
+public class AppConfig {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TgrApplication.class, args);
+		SpringApplication.run(AppConfig.class, args);
 		
 	}
 }
