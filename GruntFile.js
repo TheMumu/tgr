@@ -7,10 +7,7 @@ module.exports = function( grunt ){
    grunt.initConfig({
       jshint: {
           files: [
-             'GruntFile.js',
-             'src/main/resources/js/*.js',
-             'src/main/resources/css/*.css',
-             'src/main/template/*.ftl'
+             'GruntFile.js'
           ],
           options: {
             globals: {
@@ -18,12 +15,22 @@ module.exports = function( grunt ){
             }
           }
       },
-      watch: {
-        files: ['<%= jshint.files %>'],
-        tasks: ['jshint']
+      uglify: {
+      build: {
+          files: {
+            'target/resources/js/*.js': ['src/main/resources/js/*.js'],
+            'target/resources/css/*.css': ['src/main/resources/css/*.css'],
+            'target/resources/templates/*.ftl': ['src/main/resources/templates/*.ftl']
+          }
+      }
+
       }
    });
 
+   grunt.loadNpmTasks('grunt-freemarker');
+   grunt.loadNpmTasks('grunt-contrib-uglify');
+
    grunt.registerTask('default',['jshint']);
+   grunt.registerTask('default',['uglify']);
 
 };
