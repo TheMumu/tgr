@@ -2,4 +2,6 @@
 /.settings/
 /.mvn/
 /.idea/
-*iml
+*.iml
+node/
+node_modules/
