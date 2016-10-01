@@ -7,6 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 
 // @import to import addition configuration class
 @ComponentScan
@@ -24,5 +25,12 @@ public class AppConfig extends WebMvcConfigurerAdapter{
 		registry.addResourceHandler("*.css").addResourceLocations("/assets/css/");
 		registry.addResourceHandler("*.js").addResourceLocations("/assets/js/");
 	}
+
+//	@Bean
+//	public FreeMarkerConfigurer freeMarkerConfigurer() {
+//		FreeMarkerConfigurer configurer = new FreeMarkerConfigurer();
+//		configurer.setResourceLoader();
+//		return configurer;
+//	}
 
 }

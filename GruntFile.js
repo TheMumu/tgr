@@ -6,12 +6,12 @@ module.exports = function(grunt) {
       options: {
         separator: ';'
       },
-      dist: {
-        src: ['src/main/resources/**/*.js'],
+      js: {
+        src: ['src/main/assets/**/*.js'],
         dest: 'target/assets/js/<%= pkg.name %>.js'
       },
-      other: {
-        src: ['src/main/resources/**/*.css'],
+      css: {
+        src: ['src/main/assets/**/*.css'],
         dest: 'target/assets/css/<%= pkg.name %>.css'
       }
     },
@@ -21,12 +21,20 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'target/assets/js/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+          'target/assets/js/<%= pkg.name %>.min.js': ['<%= concat.js.dest %>']
         }
       }
     },
+    copy: {
+      main: {
+        expand: true,
+        flatten: true,
+        src: 'src/main/assets/templates/*',
+        dest: 'target/assets/templates/',
+      },
+    },
     jshint: {
-      files: ['Gruntfile.js', 'src/main/resources/**/*.js', 'src/main/resources/**/*.css'],
+      files: ['Gruntfile.js', 'src/main/assets/**/*.js', 'src/main/assets/**/*.css'],
       options: {
         // options here to override JSHint defaults
         globals: {
@@ -47,7 +55,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
+
+  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'copy']);
 
 };
