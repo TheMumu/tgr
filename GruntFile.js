@@ -1,36 +1,53 @@
-module.exports = function( grunt ){
+module.exports = function(grunt) {
 
-   // tell grunt to load jshint task plugin.
-   grunt.loadNpmTasks('grunt-contrib-jshint');
-
-   // configure tasks
-   grunt.initConfig({
-      jshint: {
-          files: [
-             'GruntFile.js'
-          ],
-          options: {
-            globals: {
-                jQuery: true
-            }
-          }
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+    concat: {
+      options: {
+        separator: ';'
       },
-      uglify: {
-      build: {
-          files: {
-            'target/resources/js/*.js': ['src/main/resources/js/*.js'],
-            'target/resources/css/*.css': ['src/main/resources/css/*.css'],
-            'target/resources/templates/*.ftl': ['src/main/resources/templates/*.ftl']
-          }
+      dist: {
+        src: ['src/main/resources/**/*.js'],
+        dest: 'target/assets/js/<%= pkg.name %>.js'
+      },
+      other: {
+        src: ['src/main/resources/**/*.css'],
+        dest: 'target/assets/css/<%= pkg.name %>.css'
       }
-
+    },
+    uglify: {
+      options: {
+        banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+      },
+      dist: {
+        files: {
+          'target/assets/js/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+        }
       }
-   });
+    },
+    jshint: {
+      files: ['Gruntfile.js', 'src/main/resources/**/*.js', 'src/main/resources/**/*.css'],
+      options: {
+        // options here to override JSHint defaults
+        globals: {
+          jQuery: true,
+          console: true,
+          module: true,
+          document: true
+        }
+      }
+    },
+    watch: {
+      files: ['<%= jshint.files %>'],
+      tasks: ['jshint']
+    }
+  });
 
-   grunt.loadNpmTasks('grunt-freemarker');
-   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
-   grunt.registerTask('default',['jshint']);
-   grunt.registerTask('default',['uglify']);
+  grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
 
 };
