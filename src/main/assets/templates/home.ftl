@@ -1,10 +1,9 @@
 <html lang="en">
 
-<div id="">
-  <iframe frameborder="0" height="100%" width="100%" 
-    src="https://youtube.com/embed/Wwdj3EAAOl4?autoplay=1&controls=0&showinfo=0&autohide=1">
-  </iframe>
-</div>
+  <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+      <source src="video.webm" type="video/webm">
+      <source src="video.mp4" type="video/mp4">
+  </video>
 
 <body>
 	Date: ${time?date}
