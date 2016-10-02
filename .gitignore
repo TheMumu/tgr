@@ -5,3 +5,4 @@
 *.iml
 node/
 node_modules/
+.DS_Store
