@@ -1,6 +1,5 @@
-package com.tgr;
+package com.tgr.config;
 
-import com.tgr.config.TgrWebConfig;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
