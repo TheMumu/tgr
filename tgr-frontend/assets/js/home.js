@@ -26,12 +26,15 @@ $( document ).ready(function() {
     var newtext = "new text";
     storylink.addEventListener("click", function() {
 
-        //$.ajax({
-        //    url: "test.html",
-        //    context: document.body
-        //}).done(function() {
-        //    $( this ).addClass( "done" );
-        //});
+        $.ajax({
+            type: "GET",
+            url: "/story/title3",
+            contentType: "text/plain",
+            dataType: "text"
+        }).done(function(data) {
+            console.log(data);
+            //$( this ).addClass( "done" );
+        });
         var storycontent = this.parentNode;
         storycontent.innerHTML = "new text";
     });

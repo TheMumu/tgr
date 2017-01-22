@@ -1,8 +1,10 @@
 package com.tgr;
 
+import com.tgr.model.Stories;
 import com.tgr.service.ResourceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -23,5 +25,11 @@ public class HomeController {
 		model.addObject("shows",resourceService.getShowsObject());
 		model.addObject("time", new Date());
 		return model;
+	}
+
+	@RequestMapping("/story/{title}")
+	public String story(@PathVariable String title) throws IOException {
+		Stories stories = resourceService.getStoryByTitle(title);
+		return stories.getStoryList().get(0).getText();
 	}
 }

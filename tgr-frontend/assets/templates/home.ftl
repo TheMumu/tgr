@@ -12,7 +12,7 @@
 
     <div class="story-wrapper">
         <div class="story-content">
-           ${stories.story_1.text}
+           ${stories.storyList[0].text}
         </div>
     </div>
 

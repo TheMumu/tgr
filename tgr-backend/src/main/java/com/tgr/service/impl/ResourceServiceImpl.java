@@ -1,6 +1,7 @@
 package com.tgr.service.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.tgr.model.Stories;
 import com.tgr.service.ResourceService;
 import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
@@ -28,6 +29,26 @@ public class ResourceServiceImpl implements ResourceService {
 
     public Object getShowsObject() throws IOException {
         return getJsonObject(new PathResource(jsonResourcePath + "shows.json"));
+    }
+
+    public Stories getStoryByTitle(String title) throws IOException {
+        String jsonStr = "";
+        try  (InputStream is = new PathResource(jsonResourcePath + "stories.json").getInputStream()){
+            jsonStr = IOUtils.toString(is);
+        } catch (IOException e) {
+            logger.error(e.getMessage(), e);
+            throw e;
+        }
+
+        Stories stories = new Stories();
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            stories = mapper.readValue(jsonStr, Stories.class);
+        } catch (IOException e) {
+            logger.error(e.getMessage(), e);
+            throw e;
+        }
+        return  stories;
     }
 
     private Object getJsonObject(Resource resource) throws IOException {
