@@ -24,6 +24,7 @@ body {
 }
 
 .story-content{
+    margin-top: 180px;
     overflow-y: auto;
 }
 
