@@ -20,3 +20,8 @@ vid.play();
         pauseButton.innerHTML = "Paused";
 	}
 });
+
+$( document ).ready(function() {
+    var link = document.getElementById("story-link");
+});
+

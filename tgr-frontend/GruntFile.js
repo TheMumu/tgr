@@ -58,7 +58,7 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['<%= jshint.files %>'],
+      files: ['<%= jshint.files %>', 'assets/**/*'],
       tasks: ['jshint']
     }
   });
@@ -70,6 +70,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
 
 
-  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'copy']);
+  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'copy', 'watch']);
 
 };

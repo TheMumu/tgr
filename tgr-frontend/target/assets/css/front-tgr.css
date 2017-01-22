@@ -14,13 +14,17 @@ body {
 }
 
 .story-wrapper {
-    position: fixed;
-    bottom: 0;
+    position: relative;
     left: 270px;
     width: 300px;
     color: oldlace;
     z-index: 2;
     font-size: 18px;
+    overflow: hidden;
+}
+
+.story-content{
+    overflow-y: auto;
 }
 
 .show-wrapper {
@@ -29,7 +33,19 @@ body {
     right: 30px;
     width: 300px;
     z-index: 2;
-    font-size: 25px;
+    font-size: 28px;
     color: antiquewhite;
 }
+
+.show-title {
+    font-size: 24px;
+    color: antiquewhite;
+ }
+
+.show-text {
+    font-size: 18px;
+    color: antiquewhite;
+}
+
+
 
