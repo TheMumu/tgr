@@ -7,11 +7,11 @@ module.exports = function(grunt) {
         separator: ';'
       },
       js: {
-        src: ['src/main/assets/**/*.js'],
+        src: ['assets/**/*.js'],
         dest: 'target/assets/js/<%= pkg.name %>.js'
       },
       css: {
-        src: ['src/main/assets/**/*.css'],
+        src: ['assets/**/*.css'],
         dest: 'target/assets/css/<%= pkg.name %>.css'
       }
     },
@@ -29,18 +29,24 @@ module.exports = function(grunt) {
       main: {
         expand: true,
         flatten: true,
-        src: 'src/main/assets/templates/*',
+        src: 'assets/templates/*',
         dest: 'target/assets/templates/',
       },
       sec: {
         expand: true,
         flatten: true,
-        src: 'src/main/assets/static/*',
+        src: 'assets/static/*',
         dest: 'target/assets/static/',
+      },
+      third: {
+        expand: true,
+        flatten: true,
+        src: 'assets/json/*',
+        dest: 'target/assets/json/',
       }
     },
     jshint: {
-      files: ['Gruntfile.js', 'src/main/assets/**/*.js'],
+      files: ['Gruntfile.js', 'assets/**/*.js'],
       options: {
         // options here to override JSHint defaults
         globals: {

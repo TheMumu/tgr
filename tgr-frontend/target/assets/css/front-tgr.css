@@ -1,0 +1,35 @@
+body {
+
+}
+
+.video {
+  position: fixed;
+  top: 50%; left: 50%;
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.story-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 270px;
+    width: 300px;
+    color: oldlace;
+    z-index: 2;
+    font-size: 18px;
+}
+
+.show-wrapper {
+    position: fixed;
+    top: 34px;
+    right: 30px;
+    width: 300px;
+    z-index: 2;
+    font-size: 25px;
+    color: antiquewhite;
+}
+
