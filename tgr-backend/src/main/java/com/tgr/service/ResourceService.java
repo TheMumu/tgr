@@ -1,6 +1,6 @@
 package com.tgr.service;
 
-import com.tgr.model.Stories;
+import com.tgr.model.Story;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -12,5 +12,5 @@ public interface ResourceService {
 
     public Object getShowsObject() throws IOException;
 
-    public Stories getStoryByTitle(String title) throws IOException;
+    public Story getStoryByTitle(String title) throws IOException;
 }

@@ -1,11 +1,13 @@
 package com.tgr;
 
-import com.tgr.model.Stories;
+import com.tgr.model.Story;
 import com.tgr.service.ResourceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.io.IOException;
@@ -27,9 +29,10 @@ public class HomeController {
 		return model;
 	}
 
-	@RequestMapping("/story/{title}")
-	public String story(@PathVariable String title) throws IOException {
-		Stories stories = resourceService.getStoryByTitle(title);
-		return stories.getStoryList().get(0).getText();
+	@RequestMapping(value = "/story/{title}", method = RequestMethod.GET)
+	public @ResponseBody
+	Story story(@PathVariable String title) throws IOException {
+		Story story = resourceService.getStoryByTitle(title);
+		return story;
 	}
 }

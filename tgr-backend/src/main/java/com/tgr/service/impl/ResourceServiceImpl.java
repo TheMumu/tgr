@@ -2,8 +2,10 @@ package com.tgr.service.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tgr.model.Stories;
+import com.tgr.model.Story;
 import com.tgr.service.ResourceService;
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -31,7 +33,7 @@ public class ResourceServiceImpl implements ResourceService {
         return getJsonObject(new PathResource(jsonResourcePath + "shows.json"));
     }
 
-    public Stories getStoryByTitle(String title) throws IOException {
+    public Story getStoryByTitle(String title) throws IOException {
         String jsonStr = "";
         try  (InputStream is = new PathResource(jsonResourcePath + "stories.json").getInputStream()){
             jsonStr = IOUtils.toString(is);
@@ -48,7 +50,15 @@ public class ResourceServiceImpl implements ResourceService {
             logger.error(e.getMessage(), e);
             throw e;
         }
-        return  stories;
+
+        Story result = null;
+        for(Story story :stories.getStoryList()){
+            if(StringUtils.equals(story.getTitle(), title)) {
+                result = story;
+            }
+        }
+
+        return  result;
     }
 
     private Object getJsonObject(Resource resource) throws IOException {
