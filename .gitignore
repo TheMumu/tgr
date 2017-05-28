@@ -1,4 +1,5 @@
 tgr-backend/target
+tgr-frontend/target
 /.settings/
 /.mvn/
 .idea/
