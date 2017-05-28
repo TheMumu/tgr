@@ -19,8 +19,7 @@ import java.io.InputStream;
 @Service
 public class ResourceServiceImpl implements ResourceService {
 
-
-    @Value("${json.resource.path}")
+    @Value("${content.json.path}")
     String jsonResourcePath;
 
     private static final Logger logger = LoggerFactory.getLogger(ResourceServiceImpl.class);

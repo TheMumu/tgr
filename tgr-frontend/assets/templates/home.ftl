@@ -17,7 +17,6 @@
     </div>
 
     <div class="show-wrapper">
-        Next Show
         <#list shows.showList as show>
             <div class="show-title">
                 ${show.title}

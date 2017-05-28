@@ -1,8 +1,7 @@
-/target/
-/tgr-frontend/target/
+tgr-backend/target
 /.settings/
 /.mvn/
-/.idea/
+.idea/
 *.iml
 node/
 node_modules/
