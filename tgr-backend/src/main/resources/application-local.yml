@@ -1,0 +1,11 @@
+spring:
+  freemarker:
+    template-loader-path: file:${user.dir}/../tgr-frontend/assets/templates/
+    prefer-file-system-access: true
+
+  resources:
+    staticLocations: file:${user.dir}/../tgr-frontend/target/assets/
+
+content:
+  json:
+    path: ${user.dir}/../tgr-frontend/target/assets/json/

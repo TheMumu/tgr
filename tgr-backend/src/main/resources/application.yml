@@ -1,11 +1,11 @@
 spring:
   freemarker:
-    template-loader-path: file:/Users/Samuel/Documents/workspaces/tgr/tgr-frontend/assets/templates/
+    template-loader-path: file:/etc/myapp/assets/templates/
     prefer-file-system-access: true
 
   resources:
-    staticLocations: file:/Users/Samuel/Documents/workspaces/tgr/tgr-frontend/target/assets/
+    staticLocations: file:/etc/myapp/assets/
 
 content:
   json:
-    path: /Users/Samuel/Documents/workspaces/tgr/tgr-frontend/target/assets/json/
+    path: /etc/myapp/assets/json/
