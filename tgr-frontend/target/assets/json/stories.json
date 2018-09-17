@@ -1,24 +1,33 @@
 {
   "storyList":[
     {
-      "title":"title1",
-      "text": "Vivamus enim lacus, <span id=\"story-link\" data-story-title=\"title3\"> doors</span> congue at tortor non, bibendum sodales odio. Phasellus laoreet diam quis nulla faucibus, non volutpat odio mollis. Phasellus quis ligula a mi volutpat lobortis ac ac magna. Fusce at placerat mauris, quis commodo urna. Integer molestie est sed sapien tempus sodales. Pellentesque augue ante, dignissim in elit tempus, rhoncus egestas lorem. Vestibulum sed laoreet nisl, eu malesuada mauris. Curabitur nec enim et nisl gravida dignissim quis eget risus. Quisque eros urna, consequat non lacus eget, sodales viverra nisl. Suspendisse porttitor tristique libero at vestibulum. Quisque consectetur ipsum ac risus pulvinar consectetur. Pellentesque vel nibh facilisis, rutrum nisi nec, bibendum orci. Cras in tellus nisi. Mauris vel varius elit. Duis porttitor, tellus a euismod ultricies, diam orci condimentum quam, non auctor justo metus sit amet tellus.Vivamus enim lacus, congue at tortor non, bibendum sodales odio. Phasellus laoreet diam quis nulla faucibus, non volutpat odio mollis. Phasellus quis ligula a mi volutpat lobortis ac ac magna. Fusce at placerat mauris, quis commodo urna. Integer molestie est sed sapien tempus sodales. Pellentesque augue ante, dignissim in elit tempus, rhoncus egestas lorem. Vestibulum sed laoreet nisl, eu malesuada mauris. Curabitur nec enim et nisl gravida dignissim quis eget risus. Quisque eros urna, consequat non lacus eget, sodales viverra nisl. Suspendisse porttitor tristique libero at vestibulum. Quisque consectetur ipsum ac risus pulvinar consectetur. Pellentesque vel nibh facilisis, rutrum nisi nec, bibendum orci. Cras in tellus nisi. Mauris vel varius elit. Duis porttitor, tellus a euismod ultricies, diam orci condimentum quam, non auctor justo metus sit amet tellus."
+      "title":"first",
+      "text": "",
+      "test":"if (resource){<br>\r\n  do();<br>\r\n}"
     },
     {
-      "title":"title2",
-      "text": "test2"
+      "title":"first",
+      "text": "I created this <span id=\"story-link\" data-story-title=\"world\" style=\"color:blue;\"> world</span>, but now i am trap in it."
     },
     {
-      "title":"title3",
-      "text": "test3 <span id=\"story-link\" data-story-title=\"title4\"> doors</span>"
+      "title":"kids",
+      "text": "They were born into the suburbs, they were bored so they moved into the cites. But then the <span id=\"story-link\" data-story-title=\"world\" style=\"color:black;\"> air</span> was missing, so they ran into the woods and they were never seen again."
     },
     {
-      "title":"title4",
-      "text": "test4"
+      "title":"world",
+      "text": "Technology gives me <span id=\"story-link\" data-story-title=\"Letgo\" style=\"color:purple;\"> control</span>. Technology gives me sounds. Technology gives me challenge. Technology gives me independance. Technology gives me <span id=\"story-link\" data-story-title=\"kids\"> kids</span>. Technology gives me a phone call. Technology took me. Technology speak to me. Technology tell me."
     },
     {
-      "title":"title5",
-      "text": "test5"
+      "title":"Letgo",
+      "text": "Let go, let go, <span id=\"story-link\" data-story-title=\"kids\" style=\"color:red;\"> let go</span>, let go, let go, let go, let go, let go, let go, <span id=\"story-link\" data-story-title=\"joke\" style=\"color:olive;\">let go</span>, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go, let go."
+    },
+    {
+      "title":"craziness",
+      "text": "Craziness is a door that opens to new worlds. To go deep you need, somehow, to self-destruct, to lose control. If you control everything you always go to the same place and you stop seeing new things. Follow your core and excitement. Follow what seems crazy, and when you'll get there, you will look around you, you'll see that everyone is crazy but you"
+    },
+    {
+      "title":"joke",
+      "text": "My boss said to me once,out loud, <span id=\"story-link\" data-story-title=\"craziness\" style=\"color:red;\"> XXEEFX </span>should become a rock star, as a joke.And in that sentence, i felt truth inside of him.He said it like a joke, but you could feel that it wasn’t , totally wasn’t.And i saw through him for an instant. In his joke i felt how he was tire of being here.I saw myself in him. But i saw my 20 years older self. That is what i saw."
     }
   ]
 }

@@ -3,7 +3,6 @@ $( document ).ready(function() {
     function custom() {
         var storylink = document.getElementById("story-link");
         if(storylink){
-            var newtext = "new text";
             storylink.addEventListener("click", function () {
                 var storycontent = this.parentNode;
                 $.ajax({

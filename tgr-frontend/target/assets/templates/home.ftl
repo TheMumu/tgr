@@ -1,14 +1,16 @@
 <html lang="en">
-
-    <link href="/css/front-tgr.css" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/front-tgr.min.js"></script>
+    <head>
+        <link href="/css/front-tgr.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/front-tgr.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
 
     <body>
 
-    <video id="my-video" class="video" autoplay="autoplay" loop="loop" muted="" width="300" height="150">
-        <source src="/static/video.mp4" type="video/mp4" />
-    </video>
+    <!--<video id="my-video" class="video" autoplay="autoplay" loop="loop" muted="" width="300" height="150">-->
+        <!--<source src="/static/sicile.mp4" type="video/mp4" />-->
+    <!--</video>-->
 
     <div class="story-wrapper">
         <div class="story-content">
@@ -17,7 +19,6 @@
     </div>
 
     <div class="show-wrapper">
-        Next Show
         <#list shows.showList as show>
             <div class="show-title">
                 ${show.title}

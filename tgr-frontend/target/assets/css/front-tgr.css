@@ -1,5 +1,9 @@
 body {
 
+  background-image: url("/static/indiaTrainBlue3.jpg");
+  background-position: 45% 36%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .video {
@@ -15,11 +19,11 @@ body {
 
 .story-wrapper {
     position: relative;
-    left: 270px;
+    left: 767px;
     width: 300px;
-    color: oldlace;
+    color: #3E64AF;
     z-index: 2;
-    font-size: 18px;
+    font-size: 32px;
     overflow: hidden;
 }
 
