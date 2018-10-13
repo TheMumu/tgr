@@ -9,8 +9,12 @@
     <body>
 
     <!--<video id="my-video" class="video" autoplay="autoplay" loop="loop" muted="" width="300" height="150">-->
-        <!--<source src="/static/sicile.mp4" type="video/mp4" />-->
+        <!--<source src="/static/video.mp4" type="video/mp4" />-->
     <!--</video>-->
+
+    <div class="center-image-container">
+        <img class="center-image" src="/static/indiaTrainBlue3.jpg">
+    </div>
 
     <div class="story-wrapper">
         <div class="story-content">

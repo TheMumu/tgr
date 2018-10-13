@@ -2,8 +2,7 @@
   "storyList":[
     {
       "title":"first",
-      "text": "",
-      "test":"if (resource){<br>\r\n  do();<br>\r\n}"
+      "text": "if (resource){<br>\r\n  do();<br>\r\n}"
     },
     {
       "title":"first",

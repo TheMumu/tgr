@@ -1,35 +1,49 @@
 body {
+  background-color: #132E62;
+}
 
-  background-image: url("/static/indiaTrainBlue3.jpg");
-  background-position: 45% 36%;
-  background-repeat: no-repeat;
-  background-size: cover;
+.center-image {
+    outline: 40px blue;
+    width: 300px;
+    height: 450px;
+    position:absolute;
+    left:48%;
+    top:27%;
+    margin:-75px 0 0 -135px;
+    outline: antiquewhite;
+    outline-width: thick;
+    outline-offset: initial;
+    outline-style: solid;
 }
 
 .video {
-  position: fixed;
-  top: 50%; left: 50%;
-  z-index: 1;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
   min-width: 100%;
   min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 129px;
+  transform: translate(-90%, 9%);
 }
 
 .story-wrapper {
     position: relative;
     left: 767px;
     width: 300px;
-    color: #3E64AF;
     z-index: 2;
-    font-size: 32px;
+    top: 18%;
+    left: 57%;
     overflow: hidden;
 }
 
-.story-content{
+.story-content {
     margin-top: 180px;
     overflow-y: auto;
+    font-family: monospace;
+    font-size: 17px;
+    color: antiquewhite;
 }
 
 .show-wrapper {
