@@ -1,38 +1,4 @@
-$( document ).ready(function() {
-
-
-
-    function getStory() {
-        $.ajax({
-            type: "GET",
-            url: "/story/kids",
-            //contentType: "text/plain",
-            //dataType: "text"
-        }).done(function (data) {
-            console.log(data.text);
-            var morseCode = translateToMorseCode(data.text);
-            var storyContent = document.getElementById('story-content');
-                var typewriter = new Typewriter(storyContent, {
-                    loop: false
-                });
-            typewriter.typeString(morseCode).start();
-        });
-    }
-
-    getStory();
-//
-//    typewriter.typeString('Hello World!')
-//        .pauseFor(2500)
-//        .deleteAll()
-//        .typeString('Strings can be removed')
-//        .pauseFor(2500)
-//        .deleteChars(7)
-//        .typeString('<strong>altered!</strong>')
-//        .pauseFor(2500)
-//        .start();
-});
-
-;function translateToMorseCode(value) {
+function translateToMorseCode(value) {
   var output = '';
   for (var i = 0; i < value.length; i++) {
     output += converter[value.charAt(i).toLowerCase()];
