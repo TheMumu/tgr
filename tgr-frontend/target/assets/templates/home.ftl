@@ -17,11 +17,19 @@
         <!--<img class="center-image" src="/static/indiaTrainBlue3.jpg">-->
     <!--</div>-->
 
+    <div class="link1">||</div>
+    <div class="link2">&&</div>
+    <div class="link3">!=</div>
+    <div class="link4">==</div>
+    <div class="link5">===</div>
+
+
     <div class="story-wrapper">
         <div class="story-content" id="story-content">
            ${stories.storyList[0].text}
         </div>
     </div>
+
 
     <!--<div class="show-wrapper">-->
         <!--<#list shows.showList as show>-->

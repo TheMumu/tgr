@@ -28,13 +28,69 @@ body {
   transform: translate(-90%, 9%);
 }
 
+.link1 {
+    position: absolute;
+    width: 15px;
+    z-index: 2;
+    top: 2%;
+    left: 1%;
+    overflow: hidden;
+    color: antiquewhite;
+    font-family: monospace;
+}
+
+.link2 {
+    position: absolute;
+    width: 15px;
+    z-index: 2;
+    top: 96%;
+    left: 1%;
+    overflow: hidden;
+    color: antiquewhite;
+    font-family: monospace;
+}
+
+.link3 {
+    position: absolute;
+    width: 15px;
+    z-index: 2;
+    top: 2%;
+    left: 97%;
+    overflow: hidden;
+    color: antiquewhite;
+    font-family: monospace;
+}
+
+.link4 {
+    position: absolute;
+    width: 15px;
+    z-index: 2;
+    top: 96%;
+    left: 97%;
+    overflow: hidden;
+    color: antiquewhite;
+    font-family: monospace;
+}
+
+.link5 {
+    position: relative;
+    width: 0px;
+    z-index: 2;
+    right: 50%;
+    left: 50%;
+    overflow: hidden;
+    color: antiquewhite;
+    font-family: monospace;
+}
+
+
 .story-wrapper {
     position: relative;
     left: 767px;
     width: 300px;
     z-index: 2;
-    top: 18%;
-    left: 57%;
+    top: -7%;
+    left: 51%;
     overflow: hidden;
 }
 

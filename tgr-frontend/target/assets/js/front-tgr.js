@@ -1,7 +1,5 @@
 $( document ).ready(function() {
 
-
-
     function getStory() {
         $.ajax({
             type: "GET",
@@ -20,16 +18,6 @@ $( document ).ready(function() {
     }
 
     getStory();
-//
-//    typewriter.typeString('Hello World!')
-//        .pauseFor(2500)
-//        .deleteAll()
-//        .typeString('Strings can be removed')
-//        .pauseFor(2500)
-//        .deleteChars(7)
-//        .typeString('<strong>altered!</strong>')
-//        .pauseFor(2500)
-//        .start();
 });
 
 ;function translateToMorseCode(value) {

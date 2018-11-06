@@ -9,19 +9,25 @@
 
     <body>
 
-    <!--<video id="my-video" class="video" autoplay="autoplay" loop="loop" muted="" width="300" height="150">-->
-        <!--<source src="/static/video.mp4" type="video/mp4" />-->
-    <!--</video>-->
-
-    <!--<div class="center-image-container">-->
-        <!--<img class="center-image" src="/static/indiaTrainBlue3.jpg">-->
-    <!--</div>-->
+    <div class="link1">||</div>
+    <div class="link2">&&</div>
+    <div class="link3">!=</div>
+    <div class="link4">==</div>
+    <div class="link5">===</div>
 
     <div class="story-wrapper">
         <div class="story-content" id="story-content">
            ${stories.storyList[0].text}
         </div>
     </div>
+
+    <!--<video id="my-video" class="video" autoplay="autoplay" loop="loop" muted="" width="300" height="150">-->
+    <!--<source src="/static/video.mp4" type="video/mp4" />-->
+    <!--</video>-->
+
+    <!--<div class="center-image-container">-->
+    <!--<img class="center-image" src="/static/indiaTrainBlue3.jpg">-->
+    <!--</div>-->
 
     <!--<div class="show-wrapper">-->
         <!--<#list shows.showList as show>-->
