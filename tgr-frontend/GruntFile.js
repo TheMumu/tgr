@@ -43,7 +43,13 @@ module.exports = function(grunt) {
         flatten: true,
         src: 'assets/json/*',
         dest: 'target/assets/json/',
-      }
+      },
+      fourth: {
+              expand: true,
+              flatten: true,
+              src: 'assets/font/*',
+              dest: 'target/assets/font/',
+            }
     },
     jshint: {
       files: ['Gruntfile.js', 'assets/**/*.js'],

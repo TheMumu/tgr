@@ -2,7 +2,7 @@
   "storyList":[
     {
       "title":"first",
-      "text": "if (resource){<br>\r\n  do();<br>\r\n}"
+      "text": "Itération 1"
     },
     {
       "title":"first",

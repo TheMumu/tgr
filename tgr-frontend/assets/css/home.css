@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'lldiscoregular';
+    src: url('/font/LLDISCO.ttf') format('truetype');
+}
+
 body {
   background-color: #000000;
+  font-family: 'lldiscoregular';
 }
 
 .center-image {
@@ -11,7 +17,7 @@ body {
     top:27%;
     margin:-75px 0 0 -135px;
     outline: antiquewhite;
-    outline-width: thick;
+    outline-width: 2px;
     outline-offset: initial;
     outline-style: solid;
 }
@@ -30,13 +36,18 @@ body {
 
 .link1 {
     position: absolute;
-    width: 15px;
+    width: 40px;
+    height 40px:
     z-index: 2;
     top: 2%;
     left: 1%;
     overflow: hidden;
     color: antiquewhite;
-    font-family: monospace;
+    display: none;
+}
+
+.link1:hover {
+    display: block;
 }
 
 .link2 {
@@ -47,7 +58,11 @@ body {
     left: 1%;
     overflow: hidden;
     color: antiquewhite;
-    font-family: monospace;
+    display: none;
+}
+
+.link2:hover {
+    display: block;
 }
 
 .link3 {
@@ -58,7 +73,11 @@ body {
     left: 97%;
     overflow: hidden;
     color: antiquewhite;
-    font-family: monospace;
+    display: none;
+}
+
+.link3:hover {
+    display: block;
 }
 
 .link4 {
@@ -69,7 +88,7 @@ body {
     left: 97%;
     overflow: hidden;
     color: antiquewhite;
-    font-family: monospace;
+    display: none;
 }
 
 .link5 {
@@ -80,25 +99,21 @@ body {
     left: 50%;
     overflow: hidden;
     color: antiquewhite;
-    font-family: monospace;
 }
 
 
 .story-wrapper {
-    position: relative;
-    left: 767px;
-    width: 300px;
+    margin-left:
     z-index: 2;
     top: -7%;
     left: 51%;
     overflow: hidden;
+    margin: 70px;
 }
 
 .story-content {
-    margin-top: 180px;
     overflow-y: auto;
-    font-family: monospace;
-    font-size: 17px;
+    font-size: 50px;
     color: antiquewhite;
 }
 
@@ -108,19 +123,5 @@ body {
     right: 30px;
     width: 300px;
     z-index: 2;
-    font-size: 28px;
     color: antiquewhite;
 }
-
-.show-title {
-    font-size: 24px;
-    color: antiquewhite;
- }
-
-.show-text {
-    font-size: 18px;
-    color: antiquewhite;
-}
-
-
-
