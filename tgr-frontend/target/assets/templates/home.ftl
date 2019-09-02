@@ -23,9 +23,9 @@
         </div>
     </div>
 
-    <video id="my-video" class="video" autoplay="autoplay" loop="loop" muted="" width="" height="">
-    <source src="/static/sicile.mp4" type="video/mp4" />
-    </video>
+    <!--<video id="my-video" class="video" autoplay="autoplay" loop="loop" muted="" width="" height="">-->
+    <!--<source src="/static/sicile.mp4" type="video/mp4" />-->
+    <!--</video>-->
 
     <div class="center-image-container">
     <img class="center-image" src="/static/image_1.png">
